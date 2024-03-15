@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+
+
+html,
+body,
+#roor,
+.App {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* background-image: linear-gradient(135deg, #243949 10%, #517fa4 100%); */
+  background-color: #0d1321;
+  @apply text-[cyan]
+}
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+#MyProfilePhoto{
+  pointer-events: none;
+}
+
+
+.linkclass {
+  color: cyan;
+  cursor: pointer;
+  padding-bottom: 5px;
+  transition: all 450ms;
+}
+
+.linkclass:hover {
+  color: #bc05ff;
+}
+
+#socialMedia_icons {
+  transition: all 450ms;
+}
+
+#socialMedia_icons:hover {
+  transform: scale(1.7, 1.7);
+}
+
+#Navbar,
+#DrawerBar {
+  background-color: #001524;
+}
+
+.card1 {
+  background: hsla(205, 46%, 10%, 1);
+  box-shadow: 0px 1px 2px rgba(0, 255, 255, 0.5),
+    0px 2px 4px rgba(0, 255, 255, 0.5),
+    0px 4px 8px rgba(0, 255, 255, 0.5),
+    0px 8px 16px rgba(0, 255, 255, 0.5);
+  backface-visibility: hidden;
+  background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+  border-radius: 7px;
+  padding: 30px 18px;
+}
+
+.card1 img {
+  transition: all 450ms;
+}
+
+.card1 h3 {
+  text-align: center;
+  color: aqua;
+  font-size: larger;
+  font-weight: 700;
+  margin-top: 32px;
+}
+
+.card1 {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.card1 img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/*! H1  */
+
+#H3NavBAr {
+  color: cyan;
+  font-family: "Nova Flat";
+  font-size: 45px;
+  padding: 7px 5px;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+/* Card Hover Effect */
+
+.card-container {
+  display: inline-block;
+  perspective: 900px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 240px;
+  height: 260px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #193d4d 51%, #137e72 100%);
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 240px;
+  height: 260px;
+  font-family: "Nova Flat";
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0px 1px 2px #7752FE   ,
+    0px 2px 4px #7752FE,
+    0px 4px 8px #7752FE,
+    0px 8px 16px #7752FE;
+  backface-visibility: hidden;
+}
+
+.mailFeild input,
+textarea,
+#MyImage {
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  font-family: "Nova Flat", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  border: 0px solid transparent !important;
+  outline: none;
+}
+
+.mailFeild input,
+textarea,
+button {
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px;
+}
+
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+ul {
+  position: absolute;
+  display: flex;
+
+}
+
+ul li {
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  animation: grow 1.6s ease-in-out infinite;
+}
+
+@keyframes grow {
+
+  0%,
+  40%,
+  100% {
+    transform: scale(0.2);
+  }
+
+  20% {
+    transform: scale(1);
+
+  }
+}
+
+ul li:nth-child(1) {
+  animation-delay: -1.4s;
+  background: #14b8c3;
+  box-shadow: 0 0 50px #00ffcc;
+
+}
+
+ul li:nth-child(2) {
+  animation-delay: -1.2s;
+  background: #dd03ff;
+  box-shadow: 0 0 50px #dd03ff;
+
+}
+
+ul li:nth-child(3) {
+  animation-delay: -1s;
+  background: #dd03ff;
+  box-shadow: 0 0 50px #dd03ff;
+
+}
+
+ul li:nth-child(4) {
+  animation-delay: -0.8s;
+  background: #4fc3f7;
+  box-shadow: 0 0 50px #4fc3f7;
+
+}
+
+ul li:nth-child(5) {
+  animation-delay: -0.6s;
+  background: #ba68c8;
+  box-shadow: 0 0 50px #ba68c8;
+
+}
+
+ul li:nth-child(6) {
+  animation-delay: -0.4s;
+  background: #dd03ff;
+  box-shadow: 0 0 50px #dd03ff;
+
+}
+
+ul li:nth-child(7) {
+  animation-delay: -0.2s;
+  background: #673ab7;
+  box-shadow: 0 0 50px #673ab7;
+
+}
